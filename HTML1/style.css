@@ -1,0 +1,76 @@
+body {
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 24px;
+  background-color: rgba(150, 150, 150, .8);
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 320px;
+  flex-grow: 0;
+  background-color: white;
+  border: 1px solid black;
+}
+.card-title {
+  font-family: Calibri, serif;
+  font-size: 24px;
+  padding: 0 8px;
+}
+.card-photo {
+  flex-basis: 100%;
+  aspect-ratio: 0.6;
+  object-fit: cover;
+}
+.card-description {
+  padding: 8px;
+}
+.button-modal {
+  text-align: right;
+  padding: 8px;
+}
+.button-modal a {
+  text-decoration: none;
+  color: blueviolet;
+  font-family: Calibri;
+}
+
+.modal {
+  display: none;
+}
+.modal:target {
+  display: initial;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  width: 80%;
+  margin: 5vw 10vw;
+  padding: 24px;
+  font-size: 24px;
+  border: 1px solid blueviolet;
+  background-color: rgba(200, 200, 0, .9);
+}
+.modal img {
+  float: left;
+  margin-right: 16px;
+  margin-bottom: 16px;
+}
+.modal h3 {
+  text-align: center;
+  margin-block: 16px;
+}
+.button-close {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+}
+.button-close a {
+  text-decoration: none;
+  color: black;
+  font-size: 32px;
+}
